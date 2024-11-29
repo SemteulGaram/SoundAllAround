@@ -1,0 +1,15 @@
+{
+  "name": "sound-all-around",
+  "description": "A majestic orchestra of device",
+  "author": "Kyush",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean -y",
+    "build": "lerna run exec --concurrency 1 'pnpm build; echo 0'",
+    "dev": "lerna run dev --scope soundallaround-server --stream"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "8.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    #messages {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    #controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .info {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div id="status" class="info">연결 상태: 대기중</div>
+  <div id="clientId" class="info">내 ID: </div>
+  <div id="latency" class="info">지연시간: -</div>
+  <div id="videoControls" style="display: block;">
+    <button id="syncVideo">영상 동기화 시작</button>
+  </div>
+  <div id="controls">
+    <input type="text" id="peerId" placeholder="상대방 ID 입력">
+    <button id="connect">연결</button>
+    <input type="text" id="messageInput" placeholder="메시지 입력" disabled>
+    <button id="send" disabled>전송</button>
+  </div>
+  <div id="messages"></div>
+  <script src="popup.js"></script>
+</body>
+</html>

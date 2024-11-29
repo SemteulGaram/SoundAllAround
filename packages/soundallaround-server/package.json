@@ -1,0 +1,12 @@
+{
+  "name": "soundallaround-server",
+  "description": "Signaling server for Sound All Around",
+  "author": "Kyush",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
